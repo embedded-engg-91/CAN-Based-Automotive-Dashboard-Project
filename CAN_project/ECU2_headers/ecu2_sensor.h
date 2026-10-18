@@ -1,9 +1,4 @@
-/* 
- * File:   ecu1_sensor.h
- * Author: Emertxe
- *
- * Created on March 20, 2025, 6:14 PM
- */
+
 #ifndef ECU2_SENSOR_H
 #define	ECU2_SENSOR_H
 
@@ -39,7 +34,7 @@ extern volatile unsigned char led_state;
 
 void get_rpm();
 uint16_t get_engine_temp();
-void process_indicator(); //cahnged tyr from indicator status 
+void process_indicator(); 
 
-#endif	/* ECU1_SENSOR_H */
+#endif	
 
