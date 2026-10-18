@@ -1,9 +1,4 @@
-/* 
- * File:   ecu1_sensor.h
- * Author: Emertxe
- *
- * Created on March 20, 2025, 6:14 PM
- */
+
 #ifndef ECU1_SENSOR_H
 #define	ECU1_SENSOR_H
 
@@ -22,5 +17,5 @@ void get_gear_pos();
 extern char *gears[];
 extern uint8_t gear_ind;
 
-#endif	/* ECU1_SENSOR_H */
+#endif	
 
