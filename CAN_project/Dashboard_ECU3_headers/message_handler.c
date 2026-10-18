@@ -13,7 +13,7 @@ void handle_speed_data(uint8_t *data, uint8_t len) {
 }
 
 void handle_gear_data(uint8_t *data, uint8_t len) {
-    //Implement the gear function
+    
     unsigned char ch = *data;
     clcd_putch(' ', LINE1(9));
     clcd_putch(' ', LINE1(10));
@@ -32,14 +32,14 @@ void handle_rpm_data(uint8_t *data, uint8_t len) {
 }
 
 void handle_engine_temp_data(uint8_t *data, uint8_t len) {
-    //Implement the temperature function
+    
     clcd_print(data, LINE2(10));
 
 }
 
 void handle_indicator_data(uint8_t *data, uint8_t len) {
-    //Implement the indicator function
-    if (len == 0) clcd_putch('O', LINE1(14)); //indicator off
+    
+    if (len == 0) clcd_putch('O', LINE1(14)); 
     clcd_putch(data[0] + '0', LINE1(14));
 }
 
@@ -47,10 +47,10 @@ void process_canbus_data() {
 
 
     uint16_t msg_id = 0;
-    char buffer[8] = {0}; //must to initialise 
+    char buffer[8] = {0}; 
     uint8_t rx_str_len = 0;
     can_receive(&msg_id, (uint8_t *) buffer, &rx_str_len);
-    if (rx_str_len > 0 && rx_str_len <= 8) {//if valid length only then enter    
+    if (rx_str_len > 0 && rx_str_len <= 8) {
         buffer[rx_str_len] = '\0';
         switch (msg_id) {
             case SPEED_MSG_ID:
