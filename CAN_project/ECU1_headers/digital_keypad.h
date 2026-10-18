@@ -2,7 +2,7 @@
 #define DIGITAL_KEYPAD_H
 
 #define LEVEL					     	0
-#define STATE_CHANGE			       	1 //means edge 
+#define STATE_CHANGE			       	1 
 
 #define KEY_PORT					PORTC
 
