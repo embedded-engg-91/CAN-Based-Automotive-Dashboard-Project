@@ -14,10 +14,10 @@ void init_config() {
 
 int main() {
     init_config();
-    //Call the functions
+    
     char str[100];
     while (1) {
-        get_speed();    //data is transmitted inside both the functions
+        get_speed();    
         get_gear_pos(); 
 
     }
