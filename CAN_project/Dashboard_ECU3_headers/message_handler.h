@@ -1,10 +1,3 @@
-/* 
- * File:   message_handler.h
- * Author: Sapthagiri
- *
- * Created on 21 March, 2025, 12:36 PM
- */
-
 #ifndef MESSAGE_HANDLER_H
 #define	MESSAGE_HANDLER_H
 #include <stdint.h>
@@ -34,5 +27,4 @@ void handle_indicator_data(uint8_t *data, uint8_t len);
 static void show_field(const uint8_t *data, uint8_t len, uint8_t col, uint8_t width);
 
 
-#endif	/* MESSAGE_HANDLER_H */
-
+#endif	
