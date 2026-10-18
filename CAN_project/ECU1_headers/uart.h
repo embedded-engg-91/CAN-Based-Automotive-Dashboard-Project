@@ -10,6 +10,5 @@ int puts(const char *s);
 unsigned char getch_uart(void);
 unsigned char getch_with_timeout(unsigned short max_time);
 unsigned char getche(void);
-//void putnum_uart(uint16_t num);
 
 #endif
