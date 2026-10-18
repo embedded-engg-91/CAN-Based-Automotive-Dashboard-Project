@@ -14,15 +14,15 @@ void init_config()
 
 int main()
 {
-    //call the functions
+    
     init_config();
-    TRISB = 0x08;    // RB3 = CAN RX must stay input
+    TRISB = 0x08;    
 
     PORTB = 0x00;
     char str[100];
     while(1)
     {
-        get_rpm(); //all the data will be transimtted inside the functions itself 
+        get_rpm(); 
         process_indicator(); 
     }
 
