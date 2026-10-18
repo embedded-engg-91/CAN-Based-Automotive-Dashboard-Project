@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-/* Defines ECAN */
+
 #define   F_ECAN_MODE2_FP		CANCON & 0x0F
 #define   F_ECANFIFO_0			RXB0CONbits.RXFUL
 #define   F_ECANFIFO_1			RXB1CONbits.RXFUL
@@ -34,7 +34,7 @@
 #define D6						11
 #define D7						12
 
-/* Function Prototypes  */
+
 void init_can(void);
 void can_transmit(uint16_t msg_id, const uint8_t *data, uint8_t len);
 void can_receive(uint16_t *msg_id, uint8_t *data, uint8_t *len);
